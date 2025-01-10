@@ -40,7 +40,7 @@ ul,ol{
     border-radius: 5px;
     background-color: white;
     justify-content: center;
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
 }
 header img{
     width: 95%;
@@ -95,7 +95,7 @@ h2{
     }
 }/*responsive section */
 @media only screen and (max-width:600px){
-      body{
+    body{
         background-color: var(--White);
     }
     h2,li,p{
