@@ -1,0 +1,137 @@
+:root{
+    /*colors*/
+    --White: hsl(0, 0%, 100%);
+
+   --Stone-100: hsl(30, 54%, 90%);
+   --Stone-150: hsl(30, 18%, 87%);
+   --Stone-600: hsl(30, 10%, 34%);
+   --Stone-900: hsl(24, 5%, 18%);
+    
+    --Brown-800: hsl(14, 45%, 36%);
+    
+    --Rose-800: hsl(332, 44%, 31%);
+    --Rose-50: hsl(330, 100%, 98%);
+    
+    
+}   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-size: 16px;
+    justify-content: center;
+    background-color: var(--Stone-100);
+    
+}
+h2,li,p{
+    padding-top: 1vw;
+}
+ul,ol{
+    padding-left: 2vw;
+}
+
+.menu-card{
+    display: flex;
+    flex-direction: column;
+    margin: 10% 25%;
+    border-radius: 5px;
+    background-color: var(--White);
+    justify-content: center;
+    padding: 5vw;
+}
+header img{
+    width: 95%;
+    border-radius: 5px;
+    margin: 1rem 2.5%;
+}
+#prep{
+    margin: 2vw 2vw;
+    padding: 1vw;
+    border-radius: 5px;
+    
+    h2, li{
+        margin-top: 1vw;
+    }
+    h2{
+        color: var(--Rose-800);
+    }
+}
+#ingredients{
+    border-bottom: 1px solid var(--Stone-150);
+    padding-bottom: 2vw;
+h2{
+    color: var(--Brown-800);
+}
+}
+#instructions{
+    border-bottom:1px solid var(--Stone-150);
+    padding-bottom: 2vw;
+    h2{
+    color: var(--Brown-800);
+    }
+}
+#nutrition{
+    h2{
+        color: var(--Brown-800);
+    }
+}
+#calories{
+    display: flex;
+    flex-wrap: wrap;
+    p{
+        width: 50%;
+        border-bottom:1px solid var(--Stone-150); ;
+    }
+    .per100g{
+        font-weight: 800;
+        color: var(--Brown-800);
+    }
+    .end{
+        border-bottom: 0;
+    }
+}/*responsive section */
+@media only screen and (max-width: 600px){
+    .menu-card{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        background-color: var(--White);
+        justify-content: center;
+        padding: 0;
+    }
+    header img{
+        width:100%;
+        border-radius: 0;
+        margin: 0px;
+    }
+    #recipe{
+        padding: 3vw;
+    }
+    #prep{
+        margin: 2vw 4vw;
+        padding: 1vw;
+        border-radius: 5px;
+        h2, li{
+            margin-top: 1vw;
+        }
+        li{
+            margin-left: 10vw;
+        }
+        h2{
+            color: var(--Rose-800);
+        }
+    }
+
+
+
+
+
+
+
+
+
+}
