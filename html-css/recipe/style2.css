@@ -24,14 +24,13 @@ body{
     font-size: 16px;
     justify-content: center;
     background-color: var(--Stone-100);
-    font-size:16px;
     
 }
 h2,li,p{
     padding-top: 1rem;
 }
 ul,ol{
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .menu-card{
@@ -41,7 +40,7 @@ ul,ol{
     border-radius: 5px;
     background-color: var(--White);
     justify-content: center;
-    padding: 5rem;
+    padding: 1rem 1rem;
 }
 header img{
     width: 95%;
@@ -50,11 +49,11 @@ header img{
 }
 #prep{
     margin: 2rem;
-    padding: 1rem;
+    padding: .5rem 1rem 1rem;
     border-radius: 5px;
-    
-    h2, li{
-        margin-top: 1rem;
+    background-color: var(--Rose-50);
+     li{
+        margin-top: .5rem;
     }
     h2{
         color: var(--Rose-800);
@@ -84,7 +83,8 @@ h2{
     flex-wrap: wrap;
     p{
         width: 50%;
-        border-bottom:1px solid var(--Stone-150); ;
+        border-bottom:1px solid var(--Stone-150); 
+        padding: 1rem 0 1rem 2rem;
     }
     .per100g{
         font-weight: 800;
@@ -94,7 +94,14 @@ h2{
         border-bottom: 0;
     }
 }/*responsive section */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width:600px){
+    h2,li,p{
+        padding-top: 0;
+        line-height: 2rem;
+    }
+    ul,ol{
+        padding-left: 0;
+    }
     .menu-card{
         display: flex;
         flex-direction: column;
@@ -102,7 +109,8 @@ h2{
         border-radius: 0;
         background-color: var(--White);
         justify-content: center;
-        padding: 0;
+        padding: 0 ;
+        width: fit-content;
     }
     header img{
         width:100%;
@@ -110,22 +118,47 @@ h2{
         margin: 0px;
     }
     #recipe{
-        padding: 3vw;
+        padding: 0 2rem;
     }
     #prep{
-        margin: 2rem 4rem;
-        padding: 1rem;
+        font-family: 'outfit';
+        
+        margin: 0 2rem;
+        padding: 1rem 3rem;
         border-radius: 5px;
         h2, li{
-            margin-top: 1rem;
+            margin-top: 0rem 2rem;
+            
         }
         li{
-            margin-left: 10rem;
+            margin-left: 1rem;
+            padding-left: 0rem;
+            font-size: 1rem;
         }
         h2{
             color: var(--Rose-800);
+            font-size: 1.5rem;
         }
     }
+       #ingredients {
+        padding: 0 3rem;
+        li{
+            margin-left: 1rem;
+        }
+       }
+       #instructions{
+        padding: 0 3rem;
+        li{
+            margin-left: 1rem;
+        }
+       }
+       #nutrition{
+        padding: 0 3rem;
+       }
+       #calories{
+        padding-bottom: 2rem;
+       }
+   
 
 
 
