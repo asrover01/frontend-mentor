@@ -1,0 +1,46 @@
+:root{
+
+    --Green: hsl(75, 94%, 57%);
+
+    --White:hsl(0, 0%, 100%);
+    
+    --Grey-700:hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+ 
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+body{
+    background-color:var(--Grey-900);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.card img{
+    border-radius: 50%;
+}
+h2, h3{
+    font-size: 14px;
+}
+h2{
+    color: var(--Green);
+}
+.card{
+    text-align: center;
+    background-color: var(--Grey-800);
+    padding: 3vw;
+    border-radius: 5px;
+    width: 20rem;
+}
+.card p{
+    background-color: var(--Grey-700);
+    border-radius: 5px;
+    padding: 1rem ;
+}
