@@ -95,6 +95,9 @@ h2{
     }
 }/*responsive section */
 @media only screen and (max-width:600px){
+      body{
+        background-color: var(--White);
+    }
     h2,li,p{
         padding-top: 0;
         line-height: 2rem;
