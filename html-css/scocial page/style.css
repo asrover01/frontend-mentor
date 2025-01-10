@@ -44,3 +44,7 @@ h2{
     border-radius: 5px;
     padding: 1rem ;
 }
+.card p:hover{
+    background-color: var(--Green);
+    color: black;
+}
