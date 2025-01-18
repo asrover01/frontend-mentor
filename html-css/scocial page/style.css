@@ -42,7 +42,7 @@ h2{
 }
 
 .card p{
-    marginn: 10px 5px 10px;
+    margin: 10px 5px 10px;
     background-color: var(--Grey-700);
     border-radius: 5px;
     padding: 1rem ;
