@@ -41,6 +41,7 @@ h2{
     width: 20rem;
 }
 .card p{
+    margin:10xp;
     background-color: var(--Grey-700);
     border-radius: 5px;
     padding: 1rem ;
