@@ -40,6 +40,9 @@ h2{
     border-radius: 5px;
     width: 20rem;
 }
+p{
+    margin:10px;
+}
 .card p{
     margin:10px;
     background-color: var(--Grey-700);
