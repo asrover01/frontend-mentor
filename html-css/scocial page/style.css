@@ -36,7 +36,7 @@ h2{
 .card{
     text-align: center;
     background-color: var(--Grey-800);
-    padding: 3vw;
+    padding: 0 1rem;
     border-radius: 5px;
     width: 20rem;
 }
@@ -47,7 +47,7 @@ h2{
     margin: 10px;
     background-color: var(--Grey-700);
     border-radius: 5px;
-    padding: 1rem ;
+    padding: 0rem ;
 }
 .social p:hover{
     background-color: var(--Green);
