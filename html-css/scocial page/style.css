@@ -47,7 +47,7 @@ h2{
     margin: 10px;
     background-color: var(--Grey-700);
     border-radius: 5px;
-    padding: 0rem ;
+    padding: 2rem ;
 }
 .social p:hover{
     background-color: var(--Green);
