@@ -41,13 +41,13 @@ h2{
     width: 20rem;
 }
 
-.card p{
-    margin: 10px 5px 10px;
+.social p{
+    margin: 10px;
     background-color: var(--Grey-700);
     border-radius: 5px;
     padding: 1rem ;
 }
-.card p:hover{
+.social p:hover{
     background-color: var(--Green);
     color: black;
 }
