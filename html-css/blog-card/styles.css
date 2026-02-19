@@ -68,6 +68,6 @@ footer{
 }
 @media only screen and (min-width:400px){
     .card{
-        margin: auto;
+        margin: 15vh auto;
     }
 }
