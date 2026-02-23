@@ -7,7 +7,7 @@ font-size:16px;
 }
 @font-face {
     font-family:figtree ;
-    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
 *{
@@ -18,13 +18,15 @@ font-size:16px;
     font-family:"figtree", sans-serif ;
 }
 body{
-    width:100vw;
-    height:100vh;
     background-color: var(--yellow);
     display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
 }
 .card{
-    margin: 15vh 5vw;
+    width:50rem;
     background-color: var(--white);
     padding:1rem;
     border-radius: 10px;
@@ -37,7 +39,7 @@ body{
     object-fit: cover;
 }
 h1{
-    padding:10px 15px;
+    padding:0.8em 1em;
     background-color: var(--yellow);
     display: inline-block;
     margin:1rem 0;
@@ -58,7 +60,7 @@ footer{
 
 
 .author-pic{
-    width:50px ;
+    width:3.2rem ;
 }
 
 .author{
@@ -68,6 +70,7 @@ footer{
 }
 @media only screen and (min-width:400px){
     .card{
-        margin: 15vh auto;
+        max-width: 30rem;
+        
     }
 }
