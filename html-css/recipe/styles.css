@@ -1,0 +1,90 @@
+:root{
+    /*color variables*/
+--White:hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%) ;
+}
+
+*{
+    margin:0 ;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Outfit";
+    
+    
+}
+
+h1, h2{
+    font-family:"Young Serif" ;
+    
+}
+main{
+    
+    display:flex;
+    flex-direction : column;
+    justify-content: center;
+    margin:0
+}
+
+h1{
+    font-size: clamp(1.5rem, 1rem + 5vw, 1.875rem);
+    
+}
+h2{
+    font-size: clamp(1.2rem, 1rem +3vw, 1.5625rem);
+    color: var(--Rose-800);
+    margin-bottom: 1.875rem;
+}
+h1, .header-description{
+
+    padding:auto 4em;
+    margin:1em 1.5em
+    
+}
+
+.prep-time{
+    background-color: var(--Rose-50);
+    padding: 1.25em 3em;
+    border-radius:50px;
+}
+section{
+    margin:5vh 5% 0 ;
+    padding:0 4rem 4rem;
+}
+section, .nutrition p{
+    border-bottom:2px solid var(--Stone-150);
+} 
+.prep-time, .nutrition-paragraph{
+    border:none !important;
+}
+
+
+.nutrition p{
+    display: flex;
+    justify-content: space-between;  
+}
+span{
+    margin-right:30%;
+    line-height: 3rem;
+}
+.nutrition p span:last-of-type{
+    font-weight:bold;
+    color: var(--Rose-800);
+}
+@media only screen and (min-width:600px) {
+    body{
+            background-color:  var(--Stone-100);
+    }
+    main{
+        background-color: white;
+        min-width: 25rem;
+        max-width: 37.5rem;
+        width: calc(25rem + 5vw);
+     margin:5rem auto;
+    }
+} 
