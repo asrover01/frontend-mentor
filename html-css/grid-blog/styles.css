@@ -1,0 +1,169 @@
+@font-face {
+    font-family:"Barlow Semi Condensed" ;
+    src: url(./Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+    
+}
+@font-face {
+    font-family:"Barlow Semi Condensed semi-bold"  ;
+    src: url(./Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
+    
+}
+:root{
+/* ## Colors*/
+
+/*### Primary*/
+
+--Purple-50: hsl(260, 100%, 95%);
+--Purple-300: hsl(264, 82%, 80%);
+--Purple-500: hsl(263, 55%, 52%);
+
+/*### Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Grey-100: hsl(214, 17%, 92%);
+--Grey-200: hsl(0, 0%, 81%);
+--Grey-400: hsl(224, 10%, 45%);
+--Grey-500: hsl(217, 19%, 35%);
+--Dark-blue: hsl(219, 29%, 14%);
+--Black: hsl(0, 0%, 7%);
+
+Font-size: 13px;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+/*sizing*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding:4rem 2rem;
+    background-color: var(--Grey-200);
+    
+}
+img{
+    border-radius: 100%;
+    width: 4rem;
+    margin-right: 1rem;
+    
+}
+.container{
+
+    padding: 3rem 0.5rem  2rem 1.2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px var(--Grey-400);
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-name, .profile-graduate{
+    padding:0.2em
+}
+.profile, .training-exp{
+    margin-bottom: 2rem;
+}
+/*coloring*/
+
+.clifford{
+    background-color: var(--Purple-500);
+    color:white;
+    
+}
+.abrams img{
+    border: 2px solid var(--Purple-300);
+}
+.walters{
+    background-color: var(--Grey-500);
+    color:white;
+}
+
+.abrams{
+    background-color:  hsla(219, 29%, 14%, 0.9);
+    
+    color:white;
+}
+.abrams img{
+    background-color: var(--Purple-50);
+}
+
+/* typography */
+
+.profile-name, .training-exp{
+    font-family: "Barlow Semi Condensed semi-bold";
+    
+}
+.profile-name{
+    font-size: clamp(1.2rem, 1rem + 0.1vw , 1.8rem);
+}
+.profile-graduate, .quote{
+    font-size: clamp(1.1rem, 0.5rem + 1vw, 2rem);
+    line-height: 1.5em;
+    opacity: 0.6;
+}
+.training-exp{
+    font-size: clamp(1.5rem, 1rem + 1.3vw, 3rem);
+}
+
+@media only screen and (min-width:900px) {
+    :root{
+        
+    }
+    body{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr fr;
+        grid-gap: 2rem;
+        margin:auto calc(2rem + 2vw);
+    }
+    .container{
+        padding-bottom: 4rem;
+    }
+    .clifford{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    .walters{
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .whittle{
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+    .harmon{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .abrams{
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
