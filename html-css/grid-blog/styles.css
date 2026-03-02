@@ -121,7 +121,7 @@ img{
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr fr;
         grid-gap: 2rem;
-        margin:auto calc(2rem + 2vw);
+        margin:auto;
     }
     .container{
         padding-bottom: 4rem;
@@ -166,4 +166,5 @@ img{
 
 
 .attribution { font-size: 11px; text-align: center; }
+
     .attribution a { color: hsl(228, 45%, 44%); }
